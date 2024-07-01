@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<title>Galeria</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco"/>
+		<meta name="keyords" content="Menu lateral, atividades, prática, html, float, imagens">
+		<meta name="description" content="Atividade de galeria com sessões organizadas por float">
+		<style type="text/css">
+			body{background-color:gray;
+			}
+			#container {margin:auto;
+						width:95%;
+			}
+			.tb{background-color:blue;
+				border:1px solid darkblue;
+				width:100%;
+				float:left;
+			}
+			#menuhrz{width:100%;
+					text-align:center;
+					background-color:darkgray;
+					border:2px solid blue;
+					float:left;
+					
+			}
+			#menuhrz ul li {display:inline;<!-- a linha será mostrada de lado-->
+							
+							
+			}
+			.conteudo{
+					width:37%;
+					height:250px;
+					float:right;
+			}
+			#imgbal{ height:200px;
+					width:200px;
+					-webkit-filter:grayscale(80%);
+					float:left;
+					padding-top:35px;
+					padding-left:15px;
+			}
+			#imgwar{ height:200px;
+					width:200px;
+					-webkit-filter:blur(3px);
+					float:right;
+					padding-top:35px;
+					padding-right:15px;
+			}
+			.conteudo2{
+					width:37%;
+					height:250px;
+					float:right;
+			}
+			img:hover{border-radius:100%; <!--Define o que acontece quando passar o mouse sobre as imagens-->
+					opacity:70%;
+			}
+			#imganc{ height:200px;
+					width:200px;
+					float:left;
+					-webkit-filter:sepia(100%);
+					padding-top:15px;
+					padding-left:15px
+					
+			}
+			#imgcas{ height:200px;
+					width:200px;
+					float:right;
+					-webkit-filter:invert(100%);
+					padding-top:15px;
+					padding-right:15px;
+			}
+			#menuvrt{background-color:darkgray;
+					border: 1px solid darkblue;
+					width:25%;
+					height:500px;
+					float:left;
+					overflow:auto;<!--coloca todo o conteúdo dentro da divisão, criando barras de rolagem se necessário-->
+					
+			}
+			#menuvrt ul li{list-style-type:none; <!--Remove pontos da lista-->
+							;
+			}
+			a{text-decoration:none;<!--Removendo sublinhado que vem como decoração de texto padrão nos links-->
+			}
+			a:link{color:darkblue;<!--pseudo classe. Sempre que a estrutura for a, a cor das letras será preto(a sequência dos abaixo é importante para funcionar)-->
+			}
+			a:visited{color:darkblue;<!--pseudo classe. Visited define a cor que o link ficará após ter visitado-->
+			}
+			a:hover{color:blue;<!--pseudo classe. Hover faz a cor do link mudar ao passar o mouse-->
+			}
+			a:active{color:orange;<!--pseudo classe. Active define a cor que o link ficará no momento do clique-->
+			}
+		</style>
+	<head>
+	<body>
+		<div id="container">
+		<header class="tb">
+		<h1 align="center">Galeria</h1>
+		</header>
+		<nav id="menuhrz">
+			<ul>
+				<li>Home |</li>
+				<li>Produto |</li>
+				<li>Contato</li>
+			</ul>
+		</nav>
+		<div id="menuvrt">
+			<ul style="padding-top:140px;">
+				<li><a href="https://www.w3schools.com/html/html_id.asp" target="blank">Informações sobre ID</a></li><br>
+				<li><a href="https://www.w3schools.com/html/html_colors.asp" target="blank">Informações sobre cores</a></li><br>
+				<li><a href="https://www.w3schools.com/html/html_css.asp" target="blank">Informações sobre css</a></li>
+			</ul>
+		</div>
+		
+		<div class="conteudo">
+			<a href="imagens/balao.png" target="blank">
+			<img src="imagens/balao.png" alt="imagem1" title="Imagem de balão" id="imgbal"/>
+			</a>
+		</div>
+		
+		<div class="conteudo">
+			<a href="imagens/warning.png" target="blank">
+			<img src="imagens/warning.png" alt="imagem2" title="Íconde de Aviso" id="imgwar"/>
+			</a>
+		</div>
+		
+		<div class="conteudo2">
+			<a href="imagens/ancora.png" target="blank">
+			<img src="imagens/ancora.png" alt="imagem2" title="Imagem de Âncora" id="imganc"/>
+			</a>
+		</div>
+		
+		<div class="conteudo2">
+			<a href="imagens/castelo.jpg" target="blank">
+			<img src="imagens/castelo.jpg" alt="imagem2" title="Imagem de Castelo" id="imgcas"/>
+			</a>
+		</div>
+
+		
+		<footer class="tb">
+			<p style="font-size:14px;">Fale conosco: (51) *****-****</p>
+		</footer>
+		</div>
+	</body>
+</html>

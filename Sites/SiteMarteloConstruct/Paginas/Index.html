@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Home</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco">
+		<meta name="keyords" content="site, projeto, construção">
+		<meta name="description" content="Site de empresa fictícia com informações, loja online, mapa e menu com acesso a outras
+		páginas do site">
+	</head>
+	<body>
+		<h1 align="center" id="topo">Home    |<!--História da empresa do produto seguimento, reportagens, depoimentos de clientes, vídeos, Enquete-->
+		<a href="produtos.html">Produtos      |</a><!--informações dos tipos de produtos/serviços de forma resumida para cada, tabelas com informação de produtos mais vendidos, e link para nova página para fazer pedido/agendamento(com estrutura de formulário)--> 
+		<a href="localizacao.html">Localização|</a><!--endereço, telefone, mapa de localização-->		
+		</h1>
+		<hr>
+		<h1 align="center"><img src="imagens/logomartelo.jpg" alt="logo" title="Logo da Empresa" width="450" height="370" border="2" 
+		align="right"/>Martelo Construções</h1>
+		<p align="center">Somos uma empresa especializada em vendas de <u>materiais
+		e veículos de construção</u>, reconhecida por muitos empresários e preferência por arquitetos pela nossa qualidade 
+		de materiais e atendimento ao cliente. 
+		
+		</p>
+		<br>
+		<br>
+		<h1 align="center">História</h1>
+		<p align="center">Fundada em 1990, com uma loja e poucos funcionários começamos vendendo materiais como tijolos, 
+		tinta, cimento, dentre outros materiais e ferramentas. Graças ao esforço e trabalho duro da equipe, hoje em dia
+		temos estabelecimentos internacionalmente e vendemos até mesmo escavadeiras.
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h1><iframe align="right" width="460" height="315" src="https://www.youtube.com/embed/xPtFEosYwF8" 
+		title="YouTubevideo player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+		gyroscope; picture-in-picture" allowfullscreen></iframe>Enquete para visitantes do site</h1>
+		<p>Prezamos pela opinião de nossos usuários. Gostaríamos de saber se você já usou os serviços de nossa empresa
+		<br><a href="#sim">Sim</a><br><a href="#nao"> Não</a></p>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<br>
+		<h2 align="center" id="nao">Questões para quem nunca usou nossos serviços:</h2>
+		<form>
+			<p align="center">Como conheceu a Martelo Construções?<br>
+			<input type="radio" id="opcao1" name="opcoes" value="pesquisa"/>
+			<label for="opcao1">Pesquisa</label><br>
+			<input type="radio" id="opcao2" name="opcoes" value="recomendacao"/>
+			<label for="opcao2">Recomendação</label><br>
+			<input type="radio" id="opcao3" name="opcoes" value="anuncio"/>
+			<label for="opcao3">Anúncio</label><br>
+			<input type="radio" id="opcao4" name="opcoes" value="outro"/>
+			<label for="outro">Outro(escreva abaixo)</label><br>
+			<textarea name="outro" rows="10" cols="40"></textarea><br>	
+			<input type="submit" value="Enviar" onclick="alert('Respostas enviadas!')"/>
+			</p>
+			<br>
+			<br>
+		</form>
+		<form>
+			<p align="center">Compraria nossos produtos?<br>
+			<input type="radio" id="opc1" name="opcs" value="sim">
+			<label for="opc1">Sim</label><br>
+			<input type="radio" id="opc2" name="opcs" value="nao">
+			<label for="opc2">Não(justificar)</label><br>
+			<textarea name="motivo" rows="10" cols="40"></textarea><br>
+			<input type="submit" value="Enviar" onclick="alert('Respostas enviadas!')"/>
+			</p>
+		</form>
+		<br>
+		<h2 align="center" id="sim">Questões para quem já usou nossos serviços:</h2>
+		<form>
+			<p align="center"> O que achou dos nossos serviços?<br>
+			<input type="radio" id="opcao5" name="opcoes" value="mbom"/>
+			<label for="opcao5">Muito Bom</label><br>
+			<input type="radio" id="opcao6" name="opcoes" value="bom"/>
+			<label for="opcao6">Bom</label><br>
+			<input type="radio" id="opcao7" name="opcoes" value="razoavel"/>
+			<label for="opcao5">Razoável</label><br>
+			<input type="radio" id="opcao8" name="opcoes" value="ruim"/>
+			<label for="opcao5">Ruim</label><br>
+			<input type="radio" id="opcao9" name="opcoes" value="pessimo"/>
+			<label for="opcao5">Péssimo</label>
+			</p>
+		</form>
+		<br>
+
+		<form>
+			<p align="center">Onde você acha que ainda podemos para melhorar?<br>
+			<input type="checkbox" id="opcao10" name="opcao10" value="atendimento"/>
+			<label for="opcao10">Atendimento</label><br>
+			<input type="checkbox" id="opcao11" name="opcao10" value="acessibilidade"/>
+			<label for="opcao10">Acessibilidade</label><br>
+			<input type="checkbox" id="opcao10" name="opcao12" value="qualidade"/>
+			<label for="opcao10">Qualidade dos materiais</label><br>
+			<input type="checkbox" id="opcao10" name="opcao13" value="entrega"/>
+			<label for="opcao10">Serviço de entregas</label><br>
+			<input type="checkbox" id="opcao10" name="opcao10" value="nada"/>
+			<label for="opcao10">Outro(escreva abaixo)</label><br>
+			<textarea name="outro" rows="10" cols="40"></textarea><br>
+			<input type="submit" value="Enviar" onclick="alert('Respostas enviadas!')"/>
+		</p>
+		</form>
+		<hr>
+		<p align="center"><a href="#topo">Voltar para o topo da página</a></p>
+		<h5 align="center">Fale conosco<br> | Fone:(51)123-456-789 | Endereço Rua ********, num 206 |</h5> 
+	</body>
+</html>

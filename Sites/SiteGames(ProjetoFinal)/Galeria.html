@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galeria</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco"/>
+		<meta name="keyords" content="Prática, html, javascript, games, jogos, tecnologia, ">
+		<meta name="description" content="Criar um site de teme livre com HTML5, CSS3 e Javascript">
+		<link rel="stylesheet" type="text/css" href="ProjetoFinal.css">
+		<script type="text/javascript" src="projetofinal.js"></script>
+		
+	</head>
+	<body onload="fairchild(), tituloFairchild()">
+	
+		<input type="checkbox" id="bt_menu"/>
+		<label for="bt_menu">&#9779;</label>
+		
+		<header id="top"><h1>Galeria<br><h2>Tudo</h2></h1></header>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</li>
+				<li><a href="tecnologias.html">Tecnologias</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li class="ativado"><a href="galeria.html">Galeria</a>
+					<ul>
+					<li><a href="ps.html">PlayStation</a></li>
+					<li><a href="xbox.html">Xbox</a></li>
+					</ul>
+				</li>
+				
+				
+			</ul>
+			<button onclick="themeFunction()" id="bt_dark"><p class="claro">Tema Claro</p><p class="escuro">Tema Escuro</p></button>
+		</nav>
+		
+		
+		
+		<section class="conteudo">
+		
+			
+			<div class="gal">
+			<h2 id="title" align="center">Carregando...</h2>
+			<br>
+			<img id="imagem" width="100%">
+			</div>
+			
+			<div class="div_bt">
+				<button onclick="mostrarVid()" class="bt_vid">Mostrar vídeo</button>
+			</div>
+			
+			<section class="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/vzoAG66Ry2Q" title="YouTube video player" frameborder="0" allow="accelerometer;
+				autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</section>
+		</section>
+		
+		<footer><h6><a href="#top">Voltar ao topo</a></h6></footer>
+	</body>
+</html>

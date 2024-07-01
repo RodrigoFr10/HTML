@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<HTML>
+		<head>
+			<title>Orçamento</title>
+			<meta charset="utf-8"/>
+			<meta name="author" content="Rodrigo Franco"/>
+			<meta name="keyords" content="Atividades, prática, html, float">
+			<meta name="description" content="Criar páginas Home, Serviços, Orçamento e Contato. Serviços contendo sub-menu">
+			<link rel="stylesheet" type="text/css" href="atvmenu.css">	
+		</head>
+		<body>
+			<header>
+				<h1>Orçamento<h1>
+			</header>
+			<nav>
+				<ul class="menu">
+					<li><a href="atvmenu.html">Home</a></li>
+					<li><a href="atvmenuservicos.html">Serviços</a>
+						<ul>
+							<li><a href="atvmenube.html">Buffet Executivo</a></li>
+							<li><a href="atvmenubi.html">Buffet Infantil</a></li>
+							<li><a href="atvmenubf.html">Buffet Festa</a></li>
+						</ul>
+					</li>
+					<li class="ativo"><a href="atvmenuorcamento.html">Orçamento</a></li>
+					<li><a href="atvmenucont.html">Contato</a></li>
+				</ul>
+			</nav>
+			
+			<div class="conteudo">
+			<br>
+			<br>
+			<br>
+				<form>
+					<label for="pnome">Nome:</label><br>
+					<input type="text" id="pnome" name="pnome" value="Escreva seu nome"><br>
+					<label for="snome">Sobrenome:</label><br>
+					<input type="text" id="snome" name="snome" value="Escreva seu sobrenome"><br>
+				</form>
+				<br>
+				<hr>
+				<br>
+				
+				<h2>Marque quais dos nossos serviços você quer</h2>
+				<br>
+				<form>
+					<input type="checkbox" id="servido" name="servido" value="servido">
+					<label for="servido">Reservar</label><br>
+					<form>
+						<input type="radio" id="m" name="reserva" value="m">
+						<label for="m">Mesa</label><br>
+						<input type="radio" id="cm" name="reserva" value="cm">
+						<label for="cm">Conjunto de Mesas</label><br>
+						<input type="radio" id="s" name="reserva" value="s">
+						<label for="s">Salão</label><br>
+						<form>
+							<h3>Horário</h3>
+							<input type="radio" id="ma" name="h1" value="ma">
+							<label for="ma">Manhã</label><br>
+							<input type="radio" id="ta" name="h2" value="ta">
+							<label for="ta">Tarde</label><br>
+							<input type="radio" id="no" name="reserva" value="no">
+							<label for="no">Noite</label><br>
+						</form>
+					</form>
+				</form>
+				<br>
+				<br>
+				<br>
+				<form>
+					<input type="checkbox" id="servido" name="servido" value="servido">
+					<label for="servido">Buffets servidos</label><br>
+					<form>
+						<input type="radio" id="be" name="prato" value="be">
+						<label for="pe">Buffet Executivo</label><br>
+						<input type="radio" id="bi" name="prato" value="bi">
+						<label for="bi">Buffet Infantil</label><br>
+						<input type="radio" id="bf" name="prato" value="bf">
+						<label for="bf">Buffet Festa</label><br>
+						<input type="radio" id="bp" name="prato" value="bp">
+						<label for="bp">Buffet Personalizado</label><br>
+						<form>
+							<p>Se marcado, descreva aqui o seu buffet personalizado</p>
+							<textarea name="descricao" rows="5" cols="20">Escreva aqui</textarea>
+							<br>
+						
+						</form>
+					</form>
+				</form>
+				<br>
+				<br>
+				<br>
+				<form>
+					<input type="checkbox" id="servido" name="servido" value="servido">
+					<label for="servido">Buffets servidos</label><br>
+					<form>
+						<input type="radio" id="da" name="decoracao" value="da">
+						<label for="da">Decoração de Aniversário</label><br>
+						<input type="radio" id="dn" name="decoracao" value="dn">
+						<label for="dn">Decoração de Natal</label><br>
+						<input type="radio" id="dp" name="decoracao" value="dp">
+						<label for="dp">Decoração Personalizada</label><br>
+						
+							<p>Se marcado, descreva aqui a sua decoração personalizada</p>
+							<textarea name="descricao" rows="5" cols="20">Escreva aqui</textarea>
+							<br>
+							<br>
+							<br>
+							<input type="submit" value="Finalizar" onclick="alert('Agradecemos por escolher nossos serviços!')"/>
+						</form>
+					</form>
+				
+					
+					
+			</div>
+		</body>
+	</html>

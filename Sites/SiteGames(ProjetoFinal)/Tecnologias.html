@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tecnologias</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco"/>
+		<meta name="keyords" content="Prática, html, javascript, games, jogos, tecnologia, ">
+		<meta name="description" content="Criar um site de teme livre com HTML5, CSS3 e Javascript">
+		<link rel="stylesheet" type="text/css" href="ProjetoFinal.css">
+		<script type="text/javascript" src="projetofinal.js"></script>
+	</head>
+	<body>
+		<p id="top"></p>
+		<input type="checkbox" id="bt_menu"/>
+		<label for="bt_menu">&#9779;</label>
+		
+		<header><h1>Tecnologias</h1></header>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</li>
+				<li class="ativado"><a href="tecnologias.html">Tecnologias</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="galeria.html">Galeria</a>
+					<ul>
+					<li><a href="ps.html">PlayStation</a></li>
+					<li><a href="xbox.html">Xbox</a></li>
+					</ul>
+				</li>
+				
+				
+			</ul>
+			<button onclick="themeFunction()" id="bt_dark"><p class="claro">Tema Claro</p><p class="escuro">Tema Escuro</p></button>
+			
+		</nav>
+		
+		<section class="conteudo">
+			<br>
+			<div class="divisao">
+			<section class="esq">
+				<br>
+				<h2>Ray Tracing</h2>
+				<br>
+				<p>
+					O método utilizado pelo algoritmo baseia-se na simulação do trajeto que os raios de luz percorreriam no mundo real, mas, neste caso, de trás para
+					a frente. Ou seja, no mundo real, os raios de luz são emitidos a partir de uma fonte de luz, percorrendo o espaço até encontrar um objeto. Após os 
+					raios de luz atingirem o objeto, estes são refratados ou refletidos, de acordo com as características do objeto, nomeadamente, cor, textura e 
+					transparência, alterando assim a sua trajetória, e fazendo com que apenas uma infinitésima minoria dos raios que partiram da fonte de luz atinjam,
+					por fim, os olhos do observador. 
+				</p>
+				<br>
+				<br>
+			</section>
+			<section class="dir">
+				<a href="imagens/esfera.jpg"><img src="imagens/esfera.jpg" alt="imagem" title="Ray Tracing"/></a>
+				
+			</section>
+			</div>
+			
+
+			<div class="divisao">
+				<section class="esq">
+					<br>
+					<h2>Super Sampling Anti-aliasing(SSAA)</h2>
+					<br>
+					<p>
+						É um método anti-aliasing espacial , ou seja, um método usado para remover aliasing ( bordas denteadas e pixeladas, coloquialmente conhecidas como 
+						" jaggies ") de imagens renderizadas em jogos de computador ou outros programas de computador que geram imagens . O aliasing ocorre porque, ao contrário
+						dos objetos do mundo real, que têm curvas e linhas suaves contínuas, a tela do computador mostra ao visualizador um grande número de pequenos quadrados.
+						Esses pixelstodos têm o mesmo tamanho e cada um tem uma única cor. A superamostragem é computacionalmente cara porque requer muito mais memória da placa
+						de vídeo e largura de banda da memória, já que a quantidade de buffer usada é várias vezes maior. Uma maneira de contornar esse problema é usar uma 
+						técnica conhecida como superamostragem adaptativa , em que apenas pixels nas bordas dos objetos são superamostrados.
+					</p>
+					<br>
+					<br>
+				</section>
+				<section class="dir">
+					<a href="imagens/pixel.jpg"><img src="imagens/pixel.jpg" alt="imagem" title="SSAA"/></a>
+				</section>
+			
+			</div>
+			
+			
+			
+			<div class="divisao">
+				<section class="esq">
+					<br>
+					<h2>Realidade Virtual</h2>
+					<br>
+					<p>
+						Realidade virtual é uma tecnologia de interface entre um usuário e um sistema operacional através de recursos gráficos 3D ou imagens 360º cujo
+						objetivo é criar a sensação de presença em um ambiente virtual diferente do real. Para isso, essa interação é realizada em tempo real, com o uso 
+						de técnicas e de equipamentos computacionais que ajudem na ampliação do sentimento de presença do usuário no ambiente virtual. O Utilizador tem a
+						sensação real de estar dentro do mundo virtual e que é capaz de manipular os objetos ali presentes como se eles fossem reais, visto que com o 
+						desenvolvimento tecnológico, estes objetos passaram à responder às interações realizadas pelo usuário (deformação, quebra, etc. ).
+					</p>
+					<br>
+					<br>
+					<br>
+					<h6>Fonte:wikipedia</h6>
+				</section>
+				<section class="dir">
+					<a href="imagens/oculusvr.png"><img src="imagens/oculusvr.png" alt="imagem" title="Óculos de realidade virtual"/></a>
+				</section>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			<br>
+		</section>
+		<footer>
+			<h6><a href="#top">Voltar ao topo</a></h6>
+		</footer>
+	</body>
+</html>

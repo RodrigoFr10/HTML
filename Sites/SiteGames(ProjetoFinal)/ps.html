@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galeria</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco"/>
+		<meta name="keyords" content="Prática, html, javascript, games, jogos, tecnologia, ">
+		<meta name="description" content="Criar um site de teme livre com HTML5, CSS3 e Javascript">
+		<link rel="stylesheet" type="text/css" href="ProjetoFinal.css">
+		<script type="text/javascript" src="projetofinal.js"></script>
+		
+	</head>
+		<p id="top"></p>
+		<input type="checkbox" id="bt_menu"/>
+		<label for="bt_menu">&#9779;</label>
+		
+		<header><h1>Galeria:</h1><br><h2>PlayStation</h2></header>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html">Home</li>
+				<li><a href="tecnologias.html">Tecnologias</a></li>
+				<li><a href="historia.html">História</a></li>
+				<li><a href="galeria.html">Galeria</a>
+					<ul>
+					<li class="ativado"><a href="ps.html">PlayStation</a></li>
+					<li><a href="xbox.html">Xbox</a></li>
+					</ul>
+				</li>
+			</ul>
+			<button onclick="themeFunction()" id="bt_dark"><p class="claro">Tema Claro</p><p class="escuro">Tema Escuro</p></button>
+		</nav>
+		
+		<section class="conteudo">
+			
+			<section class="galeriacen">
+				<a href="imagens/ps1.jpg"><img src="imagens/ps1.jpg" alt="imagem" title="PS1"/></a>
+				<div class="legps1">PS1</div>
+			</section>
+			
+			<section class="galeriaesq">
+					<a href="imagens/ps2.jpg"><img src="imagens/ps2.jpg" alt="imagem" title="PS2"/></a>
+					<div class="legps2">PS2</div>
+					
+					<a href="imagens/ps4.jpg"><img src="imagens/ps4.jpg" alt="imagem" title="PS4"/></a>
+					<div class="legps4">PS4</div>
+			</section>
+			
+			
+			<section class="galeriadir">			
+				<a href="imagens/ps3.jpg"><img src="imagens/ps3.jpg" alt="imagem" title="PS3"/></a>	
+				<div class="legps3">PS3</div>
+				
+				<a href="imagens/ps5.jpg"><img src="imagens/ps5.jpg" alt="imagem" title="PS5"/></a>
+				<div class="legps5">PS5</div>
+			</section>
+			<br>
+			<br>
+			<br>
+			<div class="div_bt">
+				<button onclick="mostrarVid()" class="bt_vid">Mostrar vídeo</button>
+			</div>
+			
+			<section class="video">
+				<p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/cZafgrq2be0" title="YouTube video player" frameborder="0" allow="accelerometer;
+				autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</p>
+			</section>
+		</section>
+		<footer><h6><a href="#top">Voltar ao topo</a></h6></footer>
+	</body>
+</html>

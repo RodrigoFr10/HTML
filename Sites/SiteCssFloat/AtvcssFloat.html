@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+	<HTML>
+		<head>
+			<title>Aplicando Float</title>
+			<meta charset="utf-8"/>
+			<meta name="author" content="Rodrigo Franco"/>
+			<meta name="keyords" content="Menu lateral, atividades, prática, html, float">
+			<meta name="description" content="Atividade com aplicação de float para criar sessões organizadas">
+			<style type="text/css">
+			body{background-color:gray;
+			}
+			header {background-color:Blue;
+					border:4px solid DarkBlue;
+			}
+			#imgtop{height:170px;
+					width:300px;
+					padding-left:500px;
+			}
+			.menu{background-color:darkgray;
+					border:4px solid DarkBlue;
+			}
+			.menuvrt{background-color:darkgray;
+					border:4px solid darkblue;
+					width:25%; 
+					float:left;
+					height:290px;
+					overflow:auto;<!--coloca todo o conteúdo dentro da divisão, criando barras de rolagem se necessário-->
+			}
+			
+			.menuvrt ul{padding-top:70px;
+			}
+			#conteudo { height:294px;
+						width:74%;
+						float:right;
+						overflow:auto;
+			}
+			#conteudo h1{text-shadow:3px 2px 10px black;<!--Sombreado no texto com definição de cor e posição da sombra para o lado e para baixo-->
+			}
+			#w{height:100px;
+				width:100px;
+				float:left;
+				padding-top:85px;
+				padding-right:100px;
+				padding-left:10px;
+				
+			}
+			footer {background-color:blue;
+					border:4px solid darkblue;
+					float:right;
+					width:100%;
+			}
+			#rodape{height:140px;
+					width:200px;
+					padding-left:550px;
+			}
+			a{text-decoration:none;<!--removendo<!--Removendo sublinhado que vem como decoração de texto padrão nos links-->
+			}
+			a:link{color:darkblue;
+			}
+			a:visited{color:DarkBlue;
+			}
+			a:hover{color:Blue;
+			}
+			a:active{color:orange;
+			}
+			</style>
+		</head>
+		<body>
+			<header>
+				<img src="imagens/dualscreen.png" alt="Imagem do Topo" title="DualScreen Topo" id="imgtop"/>
+			</header>
+			<div class="menu">
+				<h3 align="center">Home | Produto | Contato</h3>
+			</div>
+			<div id="conteudo">
+				<h1 align="center" style="font-family:arial;">Título do Texto</h1>
+				<p> <img src="imagens/warning.png" alt="Warning" title="Ícone de aviso" id="w"/> HTML foi criado em 1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research) na suíça. ... Em 1992, foi liberada a biblioteca
+			de desenvolvimento WWW ( World Wide Web), uma rede de alcance mundial, que junto com o HTML proporcionou o uso em escala mundial da WEB. Tim 
+			Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP) em uma estação NeXTcube usando o ambiente de
+			desenvolvimento NeXTSTEP. Na época a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a 
+			comunicação e disseminação das pesquisas entre ele e seu grupo de colegas. Sua solução, combinada com a então emergente internet pública (que
+			tornar-se-ia a Internet) ganhou atenção mundial. As primeiras versões do HTML foram definidas com regras sintáticas flexíveis, o que ajudou aqueles 
+			sem familiaridade com a publicação na Web. Através do tempo, a utilização de ferramentas para autoria de HTML aumentou, assim como a tendência em 
+			tornar a sintaxe cada vez mais rígida. Apesar disso, por questões históricas (retrocompatibilidade), os navegadores ainda hoje conseguem interpretar
+			páginas web que estão longe de ser um código HTML válido. </p>
+			
+			</div>
+			<div class="menuvrt">
+				<ul>
+					<li><a href="ahttps://www.w3schools.com/html/html_id.asp" target="blank">Informações sobre ID</a></li><br>
+					<li><a href="https://www.w3schools.com/html/html_colors.asp" target="blank">Informações sobre cores</a></li><br>
+					<li><a href="https://www.w3schools.com/html/html_css.asp" target="blank">Informações sobre css</a></li><br>
+					<li><a href="atvgaleria.html" target="blank">Galeria</a></li>
+				</ul>
+			</div>
+		
+			
+			<footer>
+				<img src="imagens/codigospc.jpg" alt="Imagem do Rodapé" title="PC Rodapé" id="rodape"/>
+			</footer>
+		</body>
+	</html>

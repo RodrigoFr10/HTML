@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Rodrigo Franco -->
+<html lang="pt-br">
+	<head>  <!-- head, parte interna do código -->
+		<title> Página 5 </title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Rodrigo Franco">
+		<meta name="keyords" content="Menu, link, atividades, prática, início, html, formulários">
+		<meta name="description" content="Atividade">
+	</head>
+	<body>
+		<p align="center"> 
+		<a href="index.html">   Início   |</a>
+		<a href="Pagina_2.html">Página 2 |</a>
+		<a href="Pagina_3.html">Página 3 |</a>
+		<a href="Pagina_4.html">Página 4 |</a>
+		Página 5 |
+		</p>
+		<hr>
+		<h1 align="center"> Página 5<br><br>Pesquisa </h1>
+		<br>
+		<h2>Qual o seu nome?</h2>
+		<form>
+			<label for="nome">Nome:</label>
+			<input type="text" id="nome" name="nome" value="digite seu nome"/>
+		</form>
+		
+		<h2> Quais destas linguagens você conhece?</h2>
+		
+		<form>
+			<input type="checkbox" id="linguagem1" name="linguagem1" value="java"/>
+			<label for="linguagem1">Java</label>
+			<br>
+			<input type="checkbox" id="linguagem2" name="linguagem2" value="C"/>
+			<label for="linguagem2">C</label>
+			<br>
+			<input type="checkbox" id="linguagem3" name="linguagem3" value="python"/>
+			<label for="linguagem3">Python</label>
+			<br>
+			<input type="checkbox" id="linguagem4" name="linguagem4" value="php"/>
+			<label for="linguagem4">PHP</label>
+			<br>
+			<input type="submit" value="Enviar" onclick="alert('Respostas enviadas!')"/> <!-- alert('') é a estrutura, o que estiver dentro de '' é o que será mostrado-->
+		</form>
+		<br>
+		<br>
+		<h2>Deixe sua opinião sobre o site</h2>
+		<form>
+			<textarea name="opiniao" rows="10" cols="40">Escreva aqui</textarea>
+			<br>
+			<input type="submit" value="Enviar" onclick="alert('Sua opinião foi enviada!')"/>
+		</form>
+		
+	</body>
+</html>

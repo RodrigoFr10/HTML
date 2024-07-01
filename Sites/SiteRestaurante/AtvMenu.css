@@ -1,0 +1,113 @@
+*{box-sizing:border-box;
+}
+
+body{background-color:lightyellow;	
+}
+
+header{background-color:orange;
+	   width:100%;
+	   text-align:center;
+	   float:left;
+}
+
+nav{background-color:black;
+	width:100%;
+	float:left;
+}
+
+.menu, .menu ul{padding:0;
+				list-style:none;/*Tirando os estilos que vem como padrão nas listas*/
+}
+
+.menu a{padding:12px 30px;
+		color:white;
+		text-transform:uppercase;/*Deixa tudo em maiúsculo*/
+		text-decoration:none;
+		float:left;
+}
+	
+.ativo{text-shadow:3px 3px 3px orange;
+}
+
+a:hover{background-image:linear-gradient(darkorange, orange);	
+		text-shadow:2px 2px 2px white;
+}
+
+a:active{color:yellow;
+}
+
+.menu{width:100%;
+	  margin:0;
+	  float:left;
+}
+
+ul li{list-style:none;
+	 
+}
+
+.menu:before, .menu:after{content:"";
+						  display: table;
+	
+}
+
+.menu:after{clear:both;
+	
+}
+
+.menu li{border-right:1px solid white;
+		 position:relative;/*Comando importante responsável por fazer o sub menu aparecer um embaixo do outro*/
+		 float:left;
+}
+
+.menu ul{visibility:hidden;
+		 position:absolute;/*Comando para colocar sub menu no lugar certo. Porém, deixa tudo em cima do outro desorganizado*/
+		 top:38px;/*Comando para dar espaço acima dos sub menus, para que eles fiquem um abaixo do outro*/
+		 background-color:black;
+}
+
+.menu li:hover>ul{visibility:visible; /*Faz o sub menu aparecer ao passar o mouse*/
+}
+
+.menu ul a {padding:10px;  /*A lista dentro da classe menu recebe os comandos  */
+			border-top:1px solid white;
+			width:136px;
+			display:block;
+			text-transform:none;
+}
+
+.menu:before, .menu:after{content:"";
+						  display: table;
+}
+
+.vazio .servicos {padding-top:20%;
+}
+
+.servicos{text-align:center;
+		  padding-top:15%;	
+}
+
+.servicoimg{height:70%;
+			width:70%;	
+}
+
+.conteudo{width:100%;
+		  float:left;
+}
+
+iframe{margin-left:10%;
+}
+
+@media screen and (max-width:700px) {
+	.menu li{border-top:1px solid white;
+			 width:100%;					 
+    }
+						
+	.menu ul {width:100%;
+		
+	}
+	
+	.menu ul a{visibility:visible;
+			   
+	}
+			 
+}

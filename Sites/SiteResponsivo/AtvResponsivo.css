@@ -1,0 +1,90 @@
+*{box-sizing:border-box;}
+body{background-color:lightgray;}
+
+.topo{background-color:blue;
+	   border:2px solid darkblue;
+	   text-align:center;
+	   font-family:"arial";
+	   width:100%;
+	   float:left;
+}
+/*Formadação do menu*/
+.menuhrz{background-color:gray;
+		 text-align:center;
+		 width:100%;
+		 float:left;
+		 display:block; /*Cria uma caixa como se fosse um botão para os links*/
+}
+
+li{display:inline;
+}
+
+a{color:black;
+  text-decoration:none; /*Removendo sublinhado que vem como padrão nos links*/
+}
+
+a:hover{background-color:lightgray;
+}
+
+a:active{color:blue;	
+}
+
+/*Fim da formatação do menu*/
+/*Início da formatação dos conteúdos*/
+.conteudo{height:400px;
+		  width:100%;
+		  float:left;
+}
+
+.coluna{padding:45px;
+		float:left;
+}
+
+.conteudo1{height:250px;
+		   width:350px;
+		   background-color:darkgray;
+		   overflow:auto;
+		   float:left;
+}
+
+h2{text-align:center;
+   text-shadow:2px 2px 8px black;/*Sombreado no texto com definição de cor e posição da sombra para o lado e para baixo*/
+}
+
+table, td{border:1px solid black;	
+}
+tr:nth-child(even){background-color:#999999;
+}
+
+tr:hover{background-color:darkblue;
+		color:aqua;
+}
+
+img{height:100%;
+	width:100%;
+	
+}
+
+/*Fim da formatação dos conteúdos*/
+/*Formatação do rodapé*/
+.rodape{background-color:blue;
+		text-align:center;
+		border:1px solid darkblue;
+		width:100%;
+		float:left;
+}
+
+@media screen and (max-width:1300px){
+	.coluna{border:1px solid darkblue;
+			padding:0;
+			width:100%
+	}
+	
+	.conteudo1{height:120px;
+			   width:100%
+	}
+	
+	.tabela{padding-left:20%;
+		  padding-right:20%;
+	}
+}
